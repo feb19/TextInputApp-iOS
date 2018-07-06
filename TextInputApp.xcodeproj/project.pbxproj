@@ -12,9 +12,11 @@
 		46CFAEA220EF73DC00750C52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46CFAEA020EF73DC00750C52 /* Main.storyboard */; };
 		46CFAEA420EF73DE00750C52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46CFAEA320EF73DE00750C52 /* Assets.xcassets */; };
 		46CFAEA720EF73DE00750C52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46CFAEA520EF73DE00750C52 /* LaunchScreen.storyboard */; };
+		F0D6D0A6E5C7D20F8613A009 /* Pods_TextInputApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 127831038EF5648D6499DFE0 /* Pods_TextInputApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		127831038EF5648D6499DFE0 /* Pods_TextInputApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextInputApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46CFAE9920EF73DC00750C52 /* TextInputApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextInputApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46CFAE9C20EF73DC00750C52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46CFAE9E20EF73DC00750C52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		46CFAEA320EF73DE00750C52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46CFAEA620EF73DE00750C52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46CFAEA820EF73DE00750C52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C059707FACFBFC72CEEB47FB /* Pods-TextInputApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextInputApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextInputApp/Pods-TextInputApp.debug.xcconfig"; sourceTree = "<group>"; };
+		D4B52005921E0DF545782E0B /* Pods-TextInputApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextInputApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextInputApp/Pods-TextInputApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0D6D0A6E5C7D20F8613A009 /* Pods_TextInputApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2326FDAEB19BF04C640A2C76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				127831038EF5648D6499DFE0 /* Pods_TextInputApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		46CFAE9020EF73DB00750C52 = {
 			isa = PBXGroup;
 			children = (
 				46CFAE9B20EF73DC00750C52 /* TextInputApp */,
 				46CFAE9A20EF73DC00750C52 /* Products */,
+				8EBBE541EABE689FD002C037 /* Pods */,
+				2326FDAEB19BF04C640A2C76 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = TextInputApp;
 			sourceTree = "<group>";
 		};
+		8EBBE541EABE689FD002C037 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C059707FACFBFC72CEEB47FB /* Pods-TextInputApp.debug.xcconfig */,
+				D4B52005921E0DF545782E0B /* Pods-TextInputApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46CFAEAB20EF73DE00750C52 /* Build configuration list for PBXNativeTarget "TextInputApp" */;
 			buildPhases = (
+				138ABBEC3E815955EB51FCE9 /* [CP] Check Pods Manifest.lock */,
 				46CFAE9520EF73DC00750C52 /* Sources */,
 				46CFAE9620EF73DC00750C52 /* Frameworks */,
 				46CFAE9720EF73DC00750C52 /* Resources */,
+				C0888079108E8F19A6D91260 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		138ABBEC3E815955EB51FCE9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TextInputApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0888079108E8F19A6D91260 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TextInputApp/Pods-TextInputApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/NgKeyboardTracker/NgKeyboardTracker.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NgKeyboardTracker.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TextInputApp/Pods-TextInputApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		46CFAE9520EF73DC00750C52 /* Sources */ = {
@@ -278,15 +343,13 @@
 		};
 		46CFAEAC20EF73DE00750C52 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C059707FACFBFC72CEEB47FB /* Pods-TextInputApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LPN23T94U7;
 				INFOPLIST_FILE = TextInputApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.feb19.TextInputApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -296,15 +359,13 @@
 		};
 		46CFAEAD20EF73DE00750C52 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4B52005921E0DF545782E0B /* Pods-TextInputApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LPN23T94U7;
 				INFOPLIST_FILE = TextInputApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.feb19.TextInputApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

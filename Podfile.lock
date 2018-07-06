@@ -1,0 +1,16 @@
+PODS:
+  - NgKeyboardTracker (1.0.8)
+
+DEPENDENCIES:
+  - NgKeyboardTracker
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - NgKeyboardTracker
+
+SPEC CHECKSUMS:
+  NgKeyboardTracker: 844e98833c76d76194fc8d1c40ed3efe6a50dc1a
+
+PODFILE CHECKSUM: b332164851b41863158ef4de86cb1ed7bad97fff
+
+COCOAPODS: 1.5.0
