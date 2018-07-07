@@ -8,6 +8,8 @@
 
 import UIKit
 import NgKeyboardTracker
+import CoreMotion
+
 class ViewController: UIViewController, NgKeyboardTrackerDelegate {
     
     @IBOutlet weak var inputContainerView: UIView!
