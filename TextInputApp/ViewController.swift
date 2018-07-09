@@ -57,7 +57,7 @@ class ViewController: UIViewController, NgKeyboardTrackerDelegate {
         let inputContainerHeight = coordinator.pseudoInputAccessoryViewHeight()
         var bottomPadding = -inputContainerHeight
         if !CGRect.zero.equalTo(kbFrame) {
-            bottomPadding += (s.height - kbFrame.origin.y )
+            bottomPadding += (s.height - kbFrame.origin.y)
         }
         bottomPadding = max(bottomPadding, 0)
         

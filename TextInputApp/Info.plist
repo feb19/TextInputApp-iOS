@@ -43,5 +43,7 @@
 	</array>
 	<key>NSMotionUsageDescription</key>
 	<string>歩数を使わせてください</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>つかわせてください</string>
 </dict>
 </plist>

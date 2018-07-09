@@ -79,11 +79,11 @@
 				463D4ACB20EFBD23000E4460 /* TextInputApp.entitlements */,
 				46CFAE9C20EF73DC00750C52 /* AppDelegate.swift */,
 				46CFAE9E20EF73DC00750C52 /* ViewController.swift */,
+				463D4ACE20EFBD8F000E4460 /* ProfileViewController.swift */,
 				46CFAEA020EF73DC00750C52 /* Main.storyboard */,
 				46CFAEA320EF73DE00750C52 /* Assets.xcassets */,
 				46CFAEA520EF73DE00750C52 /* LaunchScreen.storyboard */,
 				46CFAEA820EF73DE00750C52 /* Info.plist */,
-				463D4ACE20EFBD8F000E4460 /* ProfileViewController.swift */,
 			);
 			path = TextInputApp;
 			sourceTree = "<group>";

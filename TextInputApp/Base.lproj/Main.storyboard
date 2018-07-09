@@ -146,12 +146,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gah-Td-v2e">
+                                <rect key="frame" x="156" y="171" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="8rt-Xw-HPe"/>
                     </view>
                     <navigationItem key="navigationItem" id="Z7p-Uj-NyO"/>
                     <connections>
+                        <outlet property="stepHealthLabel" destination="gah-Td-v2e" id="a1v-O7-fSO"/>
                         <outlet property="stepLabel" destination="gbR-cb-DmX" id="Jkt-2a-OAd"/>
                     </connections>
                 </viewController>
